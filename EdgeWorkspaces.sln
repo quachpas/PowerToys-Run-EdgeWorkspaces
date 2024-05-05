@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34804.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdgeWorkspaces", "EdgeWorkspaces.csproj", "{8B9E7969-C0F9-4598-AD51-ACA44F5DEE04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B9E7969-C0F9-4598-AD51-ACA44F5DEE04}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{8B9E7969-C0F9-4598-AD51-ACA44F5DEE04}.Debug|ARM64.Build.0 = Debug|ARM64
+		{8B9E7969-C0F9-4598-AD51-ACA44F5DEE04}.Debug|x64.ActiveCfg = Debug|x64
+		{8B9E7969-C0F9-4598-AD51-ACA44F5DEE04}.Debug|x64.Build.0 = Debug|x64
+		{8B9E7969-C0F9-4598-AD51-ACA44F5DEE04}.Release|ARM64.ActiveCfg = Release|ARM64
+		{8B9E7969-C0F9-4598-AD51-ACA44F5DEE04}.Release|ARM64.Build.0 = Release|ARM64
+		{8B9E7969-C0F9-4598-AD51-ACA44F5DEE04}.Release|x64.ActiveCfg = Release|x64
+		{8B9E7969-C0F9-4598-AD51-ACA44F5DEE04}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8AD917B-CF71-4702-BB35-E747FAFDB77E}
+	EndGlobalSection
+EndGlobal

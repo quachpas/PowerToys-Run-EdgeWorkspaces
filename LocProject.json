@@ -1,0 +1,14 @@
+{
+    "Projects": [
+        {
+            "LanguageSet": "Azure_Languages",
+            "LocItems": [
+                {
+                    "SourceFile": "Properties\\Resources.resx",
+                    "CopyOption": "LangIDOnName",
+                    "OutputPath": "Properties"
+                }
+            ]
+        }
+    ]
+}
