@@ -23,7 +23,7 @@ jobs:
                 dotnet-version: 8.0.x
            
             - name: Build
-              run: dotnet build Community.PowerToys.Run.Plugin.EdgeWorkspaces.sln --configuration Release /p:Platform=${{matrix.platform}} /p:EnableWindowsTargeting=true
+              run: dotnet build --configuration Release /p:Platform=${{matrix.platform}} /p:EnableWindowsTargeting=true
            
             - name: Prepare artifact
               run: |
