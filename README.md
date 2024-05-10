@@ -1,5 +1,7 @@
 # PowerToys Run - Edge Workspaces
 
+![PowerToys Run - Edge Workspaces](./PTRun-EdgeWorkspaces.png)
+
 This is a plugin for [PowerToys Run](https://github.com/microsoft/PowerToys) 
 that allows you to launch [Edge workspaces](https://www.microsoft.com/en-us/edge/features/workspaces).
 
