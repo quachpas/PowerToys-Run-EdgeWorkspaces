@@ -5,6 +5,7 @@
 using System.IO;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
+using System.Windows.Media;
 
 namespace Community.PowerToys.Run.Plugin.EdgeWorkspaces.Helpers {
 

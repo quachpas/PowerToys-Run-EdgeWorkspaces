@@ -37,7 +37,8 @@ namespace Community.PowerToys.Run.Plugin.EdgeWorkspaces {
                 results.Add(new Result {
                     Title = wk.Name + (wk.ProfileName.Length > 0 ? $" ({wk.ProfileType}: {wk.ProfileName})" : ""),
                     SubTitle = wk.Description,
-                    IcoPath = wk.EdgeInstance.IconPath,
+                    // IcoPath = wk.EdgeInstance.IconPath,
+                    Icon = wk.Icon,
                     ContextData = wk,
                     Score = StringMatcher.FuzzySearch(query.Search, wk.Name).Score,
                     Action = action => {
@@ -80,9 +81,10 @@ namespace Community.PowerToys.Run.Plugin.EdgeWorkspaces {
 
             if (selectedResult.ContextData is EdgeWorkspace wk) {
                 menus.Add(new ContextMenuResult {
+                    PluginName = Properties.Resources.plugin_name,
                     Title = Properties.Resources.launch_workspace,
-                    Glyph = "", // TODO
-                    FontFamily = "Segoe Fluent Icons,Segoe2 MDL2 Assets",
+                    FontFamily = "Segoe Fluent Icons,Segoe MDL2 Assets",
+                    Glyph = "\xE81E", // MapLayers
                     AcceleratorKey = Key.Enter,
                     AcceleratorModifiers = ModifierKeys.None,
                     Action = _ => {
@@ -92,9 +94,10 @@ namespace Community.PowerToys.Run.Plugin.EdgeWorkspaces {
                     }
                 });
                 menus.Add(new ContextMenuResult {
+                    PluginName = Properties.Resources.plugin_name,
                     Title = Properties.Resources.open_profile,
-                    Glyph = "", // TODO
-                    FontFamily = "Segoe Fluent Icons,Segoe2 MDL2 Assets",
+                    FontFamily = "Segoe Fluent Icons,Segoe MDL2 Assets",
+                    Glyph = "\xE7EE", // OtherUser
                     AcceleratorKey = Key.P,
                     AcceleratorModifiers = ModifierKeys.Control | ModifierKeys.Shift,
                     Action = _ => {
