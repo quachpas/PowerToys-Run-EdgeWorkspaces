@@ -118,25 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="launch_workspace" xml:space="preserve">
-    <value>Launches Edge Workspace</value>
+    <value>Launch Edge Workspace</value>
   </data>
   <data name="open_profile" xml:space="preserve">
-    <value>Opens parent Edge Profile (Ctrl+Shift+P)</value>
+    <value>Opens Parent Edge Profile (Ctrl+Shift+P)</value>
   </data>
   <data name="plugin_description" xml:space="preserve">
-    <value>Launches Edge Workspaces</value>
+    <value>Launch Edge Workspaces</value>
   </data>
   <data name="plugin_name" xml:space="preserve">
-    <value>EdgeWorkspaces</value>
-  </data>
-  <data name="profile_paths_description" xml:space="preserve">
-    <value>Location of profile path</value>
-  </data>
-  <data name="profile_paths_label" xml:space="preserve">
-    <value>Microsoft Edge user profiles location</value>
-  </data>
-  <data name="profile_paths_placeholder" xml:space="preserve">
-    <value>%LOCALAPPDATA%\Microsoft\Edge\User Data\
-%LOCALAPPDATA%\Microsoft\Edge Dev\User Data\</value>
+    <value>Edge Workspaces</value>
   </data>
 </root>
