@@ -121,7 +121,7 @@
     <value>Launches Edge Workspace</value>
   </data>
   <data name="open_profile" xml:space="preserve">
-    <value>Opens parent Edge Profile</value>
+    <value>Opens parent Edge Profile (Ctrl+Shift+P)</value>
   </data>
   <data name="plugin_description" xml:space="preserve">
     <value>Launches Edge Workspaces</value>

@@ -38,6 +38,7 @@ namespace Community.PowerToys.Run.Plugin.EdgeWorkspaces {
                     Title = wk.Name + (wk.ProfileName.Length > 0 ? $" ({wk.ProfileType}: {wk.ProfileName})" : ""),
                     SubTitle = wk.Description,
                     // IcoPath = wk.EdgeInstance.IconPath,
+                    ToolTipData = new ToolTipData(Properties.Resources.launch_workspace,""),
                     Icon = wk.Icon,
                     ContextData = wk,
                     Score = StringMatcher.FuzzySearch(query.Search, wk.Name).Score,
@@ -80,19 +81,6 @@ namespace Community.PowerToys.Run.Plugin.EdgeWorkspaces {
             var menus = new List<ContextMenuResult>();
 
             if (selectedResult.ContextData is EdgeWorkspace wk) {
-                menus.Add(new ContextMenuResult {
-                    PluginName = Properties.Resources.plugin_name,
-                    Title = Properties.Resources.launch_workspace,
-                    FontFamily = "Segoe Fluent Icons,Segoe MDL2 Assets",
-                    Glyph = "\xE81E", // MapLayers
-                    AcceleratorKey = Key.Enter,
-                    AcceleratorModifiers = ModifierKeys.None,
-                    Action = _ => {
-                        var wk = selectedResult.ContextData as EdgeWorkspace;
-                        var process = wk.launchWorkspace();
-                        return true;
-                    }
-                });
                 menus.Add(new ContextMenuResult {
                     PluginName = Properties.Resources.plugin_name,
                     Title = Properties.Resources.open_profile,
